@@ -1,0 +1,534 @@
+    body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+    
+    header {
+        background-color: #fec433;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+    
+    header .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    #now-page {
+        background-color: #f6b206;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        /* 使导航栏内容居左 */
+    }
+    
+    nav ul li {
+        margin-left: 20px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #b69f59;
+        padding: 20px;
+    }
+    
+    .banner-content {
+        max-width: 60%;
+    }
+    
+    .banner-content h1 {
+        font-size: 30px;
+        color: #e64040;
+    }
+    
+    .banner-content p {
+        font-size: 18px;
+        color: #333;
+    }
+    
+    .featured {
+        padding: 20px;
+    }
+    
+    .featured h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #666;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    
+    .card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .card img {
+        width: auto;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .card h3 {
+        font-size: 18px;
+        color: #333;
+    }
+    
+    .card p {
+        font-size: 14px;
+        color: #999;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #fec433;
+        color: white;
+    }
+    
+    @media (min-width: 1200px) {
+        header .logo {
+            font-size: 20px;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        .banner-content h1 {
+            font-size: 27px;
+        }
+        .banner-content p {
+            font-size: 11px;
+        }
+        .featured h2 {
+            font-size: 17px;
+        }
+        .grid {
+            grid-template-columns: repeat(6, 1fr);
+        }
+        .card h3 {
+            font-size: 15px;
+        }
+        .card p {
+            font-size: 8px;
+        }
+    }
+    
+    .navigation {
+        margin: 20px 0;
+        text-align: center;
+    }
+    
+    .categories {
+        margin-bottom: 10px;
+    }
+    
+    .categories span {
+        margin: 0 10px;
+        font-weight: bold;
+        /* 突出显示的字体 */
+        color: #666;
+    }
+    
+    .highlight {
+        color: #e64040;
+        /* 突出显示的颜色 */
+    }
+    
+    .tags {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .tags button {
+        margin: 5px;
+        padding: 8px 12px;
+        background-color: #f8c343;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .tags button:hover {
+        background-color: #f6b206;
+        /* 悬停时的颜色 */
+    }
+    
+    .search-bar {
+        margin-top: 10px;
+    }
+    
+    input {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        width: 200px;
+        /* 搜索框宽度 */
+    }
+    
+    .create-btn {
+        margin: 5px;
+        padding: 8px 12px;
+        background-color: #f8c343;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .create-btn:hover {
+        background-color: #f6b206;
+    }
+    /*community css start*/
+    
+    .featured {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .featured h2 {
+        margin-bottom: 15px;
+    }
+    
+    .featured ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .featured li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .featured span {
+        background-color: #f0c040;
+        color: white;
+        padding: 5px;
+        border-radius: 50%;
+        margin-right: 10px;
+        width: 20px;
+        text-align: center;
+    }
+    
+    .featured li:last-child {
+        margin-bottom: 0;
+    }
+    /*community css end*/
+    /*community post css start*/
+    
+    .tabs {
+        display: flex;
+        align-items: center;
+        background-color: #f9f9f9;
+        padding: 10px;
+    }
+    
+    .tab {
+        background: none;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    .tab.active {
+        color: #f0c040;
+    }
+    
+    input[type="text"] {
+        margin-left: auto;
+        padding: 5px;
+    }
+    
+    .post {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 10px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+    }
+    
+    .post-header {
+        display: flex;
+        align-items: center;
+    }
+    
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .post-content {
+        margin-top: 10px;
+    }
+    
+    .post-content h3 {
+        margin: 5px 0;
+    }
+    
+    .post-footer {
+        font-size: 12px;
+        color: gray;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .pagination button {
+        border: none;
+        background: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    
+    .pagination button.active {
+        background-color: #f0c040;
+        color: white;
+        border-radius: 50%;
+    }
+    /*community post css end*/
+    /*login css start*/
+    
+    .auth-forms {
+        display: flex;
+        justify-content: space-around;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        gap: 20px;
+    }
+    /* .login-form,
+    .register-form {
+        flex: 1;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    } */
+    
+    .auth-forms h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .form-group button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #f0c040;
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .form-group button:hover {
+        background-color: #d0a030;
+    }
+    
+    .form-footer {
+        text-align: center;
+        margin-top: 15px;
+    }
+    /*login css end*/
+    /*user profile css start*/
+    
+    .user-profile {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .profile-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    
+    .user-details h3 {
+        margin: 0;
+    }
+    
+    .user-actions {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .user-actions button {
+        padding: 10px 15px;
+        border: none;
+        background-color: #f0c040;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .user-actions button:hover {
+        background-color: #d0a030;
+    }
+    
+    .user-activity {
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .user-activity h2 {
+        margin-top: 0;
+    }
+    
+    .user-activity ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .user-activity li {
+        margin: 5px 0;
+    }
+    /*user profile css end*/
+    /*team page css start*/
+    
+    .team-introduction,
+    .team-works,
+    .team-comments {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .team-header {
+        display: flex;
+        align-items: center;
+    }
+    
+    .team-logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    
+    .works-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .work {
+        flex: 1 1 200px;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .work img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    .team-comments .comments {
+        margin-bottom: 20px;
+    }
+    
+    .comments .comment {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .comment-form {
+        margin-top: 15px;
+    }
+    
+    .comment-form input,
+    .comment-form textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .comment-form button {
+        padding: 10px 15px;
+        border: none;
+        background-color: #f0c040;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .comment-form button:hover {
+        background-color: #d0a030;
+    }
+    /*team page css end*/

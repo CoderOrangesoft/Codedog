@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编程狗社区 - 登录</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">编程狗社区</div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./course.html">课程</a></li>
+                <li><a href="./discover.html">发现</a></li>
+                <li><a href="./team.html">团队</a></li>
+                <li><a href="./community.html">论坛</a></li>
+                <li><a href="./login.html">登录</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <main>
+            <section class="auth-forms">
+                <div class="login-form">
+                    <h2>用户登录</h2>
+                    <form action="./dashboard.html" method="POST">
+                        <div class="form-group">
+                            <label for="username">用户名：</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">密码：</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">登录方式：</label>
+                            <input type="text" id="pid" name="pid" value="post-t-a" disabled>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">登录</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="register-form">
+                    <h2>用户注册</h2>
+                    <form action="./register.html" method="POST">
+                        <div class="form-group">
+                            <label for="reg-username">新建用户名：</label>
+                            <input type="text" id="reg-username" name="reg-username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-password">密码：</label>
+                            <input type="password" id="reg-password" name="reg-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-password">重复密码：</label>
+                            <input type="password" id="reg-password1" name="reg-password1" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">注册</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="auth-forms">
+                <div class="codemao-form">
+                    <h2>编程猫用户登录</h2>
+                    <form action="./codemao_login.html" method="POST">
+                        <div class="form-group">
+                            <label for="reg-username">编程猫用户名：</label>
+                            <input type="text" id="bcmusername" name="bcmusername" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-password">编程猫密码：</label>
+                            <input type="password" id="bcmpassword" name="bcmpassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-password">登录平台(pid)：</label>
+                            <input type="text" id="bcmpid" name="bcmpid" value="65edCTyg" disabled>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">用编程猫账号登录</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+    </main>
+
+    <footer>
+        <p>© 2024 编程狗编程社区. 保留所有权利</p>
+    </footer>
+</body>
+
+</html>
