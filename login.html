@@ -89,6 +89,22 @@
                         </div>
                     </form>
                 </div>
+                <div class="token-form">
+                    <h2>第三方token登录</h2>
+                    <form action="./token_login.html" method="POST">
+                        <div class="form-group">
+                            <label for="reg-username">token：</label>
+                            <input type="text" id="token" name="token" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-password">token授权平台：</label>
+                            <input type="text" id="tokenpid" name="tokenpid" value="Codemao Auth" disabled>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">用第三方token登录</button>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
 
@@ -98,5 +114,7 @@
         <p>© 2024 编程狗编程社区. 保留所有权利</p>
     </footer>
 </body>
+<script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script src="./api.js"></script>
 
 </html>
